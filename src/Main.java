@@ -12,6 +12,12 @@ public class Main {
                 + amountinHigh * percentInHigh +
                 amountinSpecial * percentInSpecial) / 100;
 
-        System.out.println(result);
+        int cashBack;
+        if(result > 3_000){
+             cashBack = 3_000;
+        }else{
+            cashBack = result;
+        }
+        System.out.println(cashBack);
     }
 }
